@@ -10,6 +10,18 @@ updates:
       timezone: "America/Sao_Paulo"
     open-pull-requests-limit: 5
     versioning-strategy: "increase-if-necessary"
+    ignore:
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
+      - dependency-name: "solc"
+        update-types:
+          - "version-update:semver-patch"
+          - "version-update:semver-minor"
+          - "version-update:semver-major"
     commit-message:
       prefix: "chore(deps)"
 
