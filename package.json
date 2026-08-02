@@ -1,0 +1,36 @@
+{
+  "name": "joleri-intelligence",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:solidity": "hardhat test solidity",
+    "test:node": "hardhat test nodejs",
+    "coverage": "hardhat test --coverage",
+    "audit:prod": "npm audit --omit=dev",
+    "check": "hardhat compile && tsc --noEmit && hardhat test",
+    "deploy:local": "hardhat ignition deploy ignition/modules/Joleri.ts",
+    "deploy:bsc-testnet": "hardhat ignition deploy ignition/modules/Joleri.ts --network bscTestnet --deployment-id bsc-testnet-v2 --parameters ignition/parameters/bsc-testnet.json --verify",
+    "dapp": "vite dapp --host 127.0.0.1 --port 5173",
+    "dapp:build": "vite build dapp --outDir ../dist-dapp --emptyOutDir",
+    "verify:bsc-testnet": "hardhat ignition verify bsc-testnet-v2 --network bscTestnet",
+    "validate:subscription-v2": "hardhat run scripts/check-tester-subscription-v2.ts --network bscTestnet"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.1.8",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.7",
+    "@types/node": "^22.20.1",
+    "hardhat": "^3.12.0",
+    "solc": "0.8.28",
+    "typescript": "~6.0.3",
+    "viem": "^2.55.10",
+    "vite": "^8.2.0"
+  }
+}

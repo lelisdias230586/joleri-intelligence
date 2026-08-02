@@ -1,0 +1,11 @@
+{
+  "JoleriModule": {
+    "admin": "0x855e50DDe2196ac5B3Fa51d22E3673569C6E5F10",
+    "ecosystemWallet": "0xEb39f79c5B8fb15514dfbD4f1bF7263fFC501169",
+    "treasuryWallet": "0x8EbB2BD841f85474F8Dc430B810F0C8a0D950D71",
+    "liquidityWallet": "0xc9594b74cF1b1241cd7CAc1800AbD5A20DA1A4fF",
+    "teamBeneficiary": "0x7C99170F179E78B1db5b4E156421a2Beec1ED517",
+    "partnersBeneficiary": "0x9660a053Dc1D579E2a0a40355A9951bE1B58F6EA",
+    "securityWallet": "0x4c310132EC5f3e54D90Ca4434Eaa01828aA42b86"
+  }
+}

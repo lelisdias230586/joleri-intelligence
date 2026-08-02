@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interface local para validar a assinatura Basic do Joleri Access na BNB Smart Chain Testnet."
+    />
+    <title>Joleri Access | Testnet</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">JOLERI INTELLIGENCE</p>
+        <h1>Teste de assinatura Basic</h1>
+        <p class="subtitle">
+          Ambiente local conectado exclusivamente à BNB Smart Chain Testnet.
+        </p>
+      </header>
+
+      <section class="security-note" aria-label="Aviso de segurança">
+        <strong>Segurança:</strong> esta página nunca solicita chave privada,
+        frase secreta ou senha. Toda assinatura acontece dentro da MetaMask.
+      </section>
+
+      <section class="panel connect-panel">
+        <div class="button-row">
+          <button id="connectButton" class="primary" type="button">
+            Conectar MetaMask
+          </button>
+          <button id="refreshButton" class="secondary" type="button" disabled>
+            Atualizar dados
+          </button>
+        </div>
+
+        <div id="statusBox" class="status info" role="status" aria-live="polite">
+          Conecte a MetaMask usando a conta Joleri Tester.
+        </div>
+
+        <a
+          id="transactionLink"
+          class="transaction-link"
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          hidden
+        >
+          Ver transação no BscScan
+        </a>
+      </section>
+
+      <section class="dashboard" aria-label="Dados da assinatura">
+        <article class="panel metric-card">
+          <h2>Conexão</h2>
+          <dl>
+            <div>
+              <dt>Rede</dt>
+              <dd id="networkValue">—</dd>
+            </div>
+            <div>
+              <dt>Conta</dt>
+              <dd id="accountValue">—</dd>
+            </div>
+            <div>
+              <dt>Validação</dt>
+              <dd id="accountValidation">—</dd>
+            </div>
+            <div>
+              <dt>Gás disponível</dt>
+              <dd id="nativeBalance">—</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="panel metric-card">
+          <h2>Saldo JOLR</h2>
+          <p id="tokenBalance" class="large-value">—</p>
+          <dl>
+            <div>
+              <dt>Aprovado para Access</dt>
+              <dd id="allowanceValue">—</dd>
+            </div>
+            <div>
+              <dt>Contrato</dt>
+              <dd>JOLR V2</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="panel metric-card">
+          <h2>Plano Basic</h2>
+          <dl>
+            <div>
+              <dt>Saldo mínimo</dt>
+              <dd id="minimumBalance">—</dd>
+            </div>
+            <div>
+              <dt>Mensalidade</dt>
+              <dd id="monthlyFee">—</dd>
+            </div>
+            <div>
+              <dt>Necessário agora</dt>
+              <dd id="requiredBalance">—</dd>
+            </div>
+            <div>
+              <dt>Plano habilitado</dt>
+              <dd id="planEnabled">—</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="panel metric-card">
+          <h2>Acesso</h2>
+          <p id="accessBadge" class="access-badge inactive">Não conectado</p>
+          <dl>
+            <div>
+              <dt>Plano atual</dt>
+              <dd id="currentPlan">—</dd>
+            </div>
+            <div>
+              <dt>Validade</dt>
+              <dd id="expirationValue">—</dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="panel action-panel">
+        <h2>Executar assinatura de teste</h2>
+        <p class="muted">
+          As ações ficam disponíveis somente para a conta Joleri Tester na rede 97.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <div>
+              <strong>Aprovar a mensalidade</strong>
+              <span>Aprovação exata de 500 JOLR, sem permissão ilimitada.</span>
+            </div>
+            <button id="approveButton" class="primary" type="button" disabled>
+              Aprovar 500 JOLR
+            </button>
+          </li>
+          <li>
+            <div>
+              <strong>Assinar o plano Basic</strong>
+              <span>Compra de um período de 30 dias.</span>
+            </div>
+            <button id="subscribeButton" class="primary" type="button" disabled>
+              Assinar Basic por 1 mês
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel contracts-panel">
+        <h2>Contratos utilizados</h2>
+        <p>
+          Token:
+          <a
+            href="https://testnet.bscscan.com/address/0xFE67d22F3540B4368340e2043B404bB7205eC441"
+            target="_blank"
+            rel="noreferrer"
+          >0xFE67…eC441</a>
+        </p>
+        <p>
+          Access:
+          <a
+            href="https://testnet.bscscan.com/address/0x8148Eb91811296DaE1c01008cdf54bEA18e45DDe"
+            target="_blank"
+            rel="noreferrer"
+          >0x8148…45DDe</a>
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

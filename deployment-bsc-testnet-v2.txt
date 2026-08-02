@@ -1,0 +1,50 @@
+﻿JOLERI INTELLIGENCE - DEPLOYMENT BSC TESTNET V2
+STATUS: VALIDADO E OFICIAL PARA TESTES INTERNOS
+Rede: BNB Smart Chain Testnet
+Chain ID: 97
+Deployment ID: bsc-testnet-v2
+Data do registro: 2026-08-01 11:50:44
+
+CONTRATOS V2
+JOLR Token: 0xFE67d22F3540B4368340e2043B404bB7205eC441
+Joleri Access: 0x8148Eb91811296DaE1c01008cdf54bEA18e45DDe
+Team Vesting: 0x0ff68E74758ed82C18821DdeB4570ea4A5fd6254
+Partners Vesting: 0x5031aFFaB805F4728e65646d8befEc1740Ba9e43
+
+CARTEIRAS
+Deployer: 0x855e50dde2196ac5b3fa51d22e3673569c6e5f10
+Admin: 0x02FA52226F83d21F1A33233Aee88C8D31356B685
+Ecosystem: 0xEb39f79c5B8fb15514dfbD4f1bF7263fFC501169
+Treasury: 0x8EbB2BD841f85474F8Dc430B810F0C8a0D950D71
+Liquidity: 0xc9594b74cF1b1241cd7CAc1800AbD5A20DA1A4fF
+Team: 0x7C99170F179E78B1db5b4E156421a2Beec1ED517
+Partners: 0x9660a053Dc1D579E2a0a40355A9951bE1B58F6EA
+Security: 0x4c310132EC5f3e54D90Ca4434Eaa01828aA42b86
+
+TOKEN
+Nome: Joleri Intelligence
+Simbolo: JOLR
+Decimais: 18
+Oferta fixa: 100000000 JOLR
+
+DISTRIBUICAO
+Ecosystem: 35000000 JOLR
+Treasury: 20000000 JOLR
+Liquidity: 15000000 JOLR
+Security: 5000000 JOLR
+Team Vesting: 15000000 JOLR
+Partners Vesting: 10000000 JOLR
+
+ADMINISTRACAO
+Admin controla JOLR Token: true
+Deployer controla JOLR Token: false
+Admin controla Joleri Access: true
+Deployer controla Joleri Access: false
+
+SOURCIFY
+Partners: https://sourcify.dev/server/repo-ui/97/0x5031aFFaB805F4728e65646d8befEc1740Ba9e43
+Team: https://sourcify.dev/server/repo-ui/97/0x0ff68E74758ed82C18821DdeB4570ea4A5fd6254
+Token: https://sourcify.dev/server/repo-ui/97/0xFE67d22F3540B4368340e2043B404bB7205eC441
+Access: https://sourcify.dev/server/repo-ui/97/0x8148Eb91811296DaE1c01008cdf54bEA18e45DDe
+
+VALIDACAO FINAL: APROVADA
